@@ -56,10 +56,11 @@ if(a!=b):
     print("Line 2-a is equal to",b )
 else:
     print("Line 2-a is not equal to", b)
-if( a<>b):
-    print('Line 3-a is equal to',b)
-else:
-    print("Line 3-a is equal to",b)
+
+# if( a <> b ):
+#     print('Line 3-a is equal to',b)
+# else:
+#     print("Line 3-a is equal to",b)
 if(a<b):
     print("Line 4-a is less than",b)
 else:
@@ -80,3 +81,72 @@ if(b>=a):
 else:
     print("Line 7 -b is either greater than nor equal to ",b)
   
+
+#逻辑运算符
+'''
+and:布尔与，如果a为false，a and b 返回false。否则返回b的计算值
+or：或。如果a是true，返回true，否则它返回y的计算值
+not：非，取反！
+'''
+a=10
+b=20
+c=0
+if(a and b):
+    print("Line 1-a and b are true")
+else:
+    print("Line 1-Either a is not true or b is not true")
+
+
+#成员运算符
+'''
+in：如果在指定的序列中找到值返回True，否则返回false
+not in：如果在质地昂的序列中没有找到返回值返回true，否则返回false
+'''
+a=10
+b=20
+list=[1,2,3,4,5]
+if(a in list):
+    print("true")
+else:
+    print("false")
+if(b not in list):
+    print("True")
+else:
+    print("false")
+
+a=2
+if(a in list):
+    print("true")
+else:
+    print("False")
+
+#身份运算符
+'''
+is:is是判断两个标识符是不是引用自一个对象  x is y 如果id(x)等于id(y) ，is返回结果1
+is not是判断两个标识符是不是引自不同对象  ，反之
+'''
+a=20
+b=20
+if(a is b):
+    print("line 1-a and b hava same identity")
+else:
+    print("line 1 -a and b do not have same identity")
+
+if(id(a)==id(b)):
+    print("line 2 -a and b have same identity")
+else:
+    print("line 2-a and b do not hava same identity")
+
+b=30
+if(a is b):
+    print("line3 -a and b have sanme identity")
+else:
+    print("line3 -a and b do not have sanme identity")
+
+if(a is not b):
+    print("line4 -a and b do not have sanme identity")
+else:
+    print("line4 -a and b have sanme identity")
+
+
+#运算符优先级
