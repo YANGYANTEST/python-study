@@ -57,7 +57,7 @@ if(a!=b):
 else:
     print("Line 2-a is not equal to", b)
 
-# if( a <> b ):
+# if(a<>b):
 #     print('Line 3-a is equal to',b)
 # else:
 #     print("Line 3-a is equal to",b)
@@ -150,3 +150,27 @@ else:
 
 
 #运算符优先级
+'''
+**   指数（最高优先级）
+~ + - 按位翻转，一元加号和减号（最后两个的方法名为+@和-@）
+*/%// 乘 除 取模和取整除
++ - 加法减法
+>>  << 右移，左移运算符
+&  位AND
+^  位运算符
+<=  <>  >=  比较运算符
+<> == != 等于运算符
+is is not：身份运算符
+in not in 成员运算符
+not or and 逻辑运算符
+
+'''
+
+a=10
+b=20
+c=15
+d=5
+e=0
+
+e=(a+b) * c/d  
+print("value of (a+b) * c/d is",e)
