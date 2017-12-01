@@ -57,6 +57,7 @@ if(a!=b):
 else:
     print("Line 2-a is not equal to", b)
 
+#      这段代码python3没有此<>这一语法，适用于python2
 # if(a<>b):
 #     print('Line 3-a is equal to',b)
 # else:
@@ -174,3 +175,5 @@ e=0
 
 e=(a+b) * c/d  
 print("value of (a+b) * c/d is",e)
+
+
