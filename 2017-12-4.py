@@ -57,13 +57,16 @@ print(max(list3[3]))
 
 app=['sunday','monday','happy','linda','status']
 obj=['真','的','嘛','?']
-print(app.append(obj)) #返回为None
+app.append(obj) 
+print(app)
+
 
 #作业：把所有的方法写一遍
 yangyan=[1,2,345,6,78,3,44,77,1124,4]
 print(yangyan.append(5678))#返回w为None
 print(yangyan.count(3))
-print(yangyan.insert(1,66))#返回为空
+yangyan.insert(1,66)
+print(yangyan)
 
 #分片赋值
 a=["我爱学习"]
