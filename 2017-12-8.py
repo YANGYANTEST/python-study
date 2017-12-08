@@ -16,15 +16,15 @@ f=open(filepath)
 users=[]
 #解析数据
 reader=csv.reader(f)
-print(reader)git 
+print(reader)
 
-for row in reader:
-    print(reader)
+# for row in reader:
+#     print(reader)
 #把第一行数据删除
 next(reader,None)
 
 #迭代循环
 for row in reader:
     #print(row)
-    user.append(row)
+    users.append(row)
 print(users)
