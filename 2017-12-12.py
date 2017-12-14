@@ -115,7 +115,7 @@ for letter in 'Taobao':
         print('执行pass模块')
     print('当前字母：',letter)
 
-
+print("==================================")
 
 #作业
 '''
@@ -125,8 +125,45 @@ for letter in 'Taobao':
 写一个程序检测输入的数是否是阿姆斯特朗数
 '''
 
+num=int(input("请输入一个1-1000的数： "))
+n=len(str(num))
+if num < 1 or num >1000:
+    print('输入的数字不符合条件')
+else:
+    if n==1:
+        if num==num**1:
+            print("%d 是阿姆斯特朗数"%num)
+        else:
+            print("%d 不是阿姆斯特朗数"%num) 
+    elif n==2:
+        gewei=num%10
+        shiwei=num//10
+        if num == gewei **2 +shiwei**2:
+            print("%d 不是阿姆斯特朗数")
+    elif n==3:
+        gewei=(num-100*(num//100))%10
+        shiwei=(num-100*(num//100))//10
+        baiwei=num//100
+        if num==gewei**3 + shiwei**3 + baiwei**3:
+            print("%d 是阿姆斯特朗数"%num)
+        else:
+            print("%d 不是阿姆斯特朗数"%num)
 
 
+#方法2：
+num=int(input("please input a value: "))
+sum=0
+n=len(str(num))
 
+temp=num
+while temp>0:
+    digit=temp%10
+    sum+=digit ** n 
+    temp //=10
+    print(digit,temp)
 
+if sum==num:
+    print("yes")
+else:
+    print("no")
 
