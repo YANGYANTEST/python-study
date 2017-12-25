@@ -7,6 +7,12 @@ for x in range(1,10):
 print("=============================")
 
 
+for x in range(1,10):
+    for y in range(1,x+1):
+        print('{}+{}={}\t'.format(y,x,x+y),end='')
+    print()
+
+
 #求10到100中能被3或5整除的数的和
 sum=0
 for i in range(10,101):
@@ -48,3 +54,5 @@ for i in range(len(arays)):
             # 实现连个变量的互换 ab=ba
             arays[i],arays[j] = arays[j],arays[i]
 print(arays)
+
+

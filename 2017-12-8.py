@@ -18,13 +18,13 @@ users=[]
 reader=csv.reader(f)
 print(reader)
 
-# for row in reader:
-#     print(reader)
+for row in reader:
+    print(row)
 #把第一行数据删除
 next(reader,None)
 
 #迭代循环
 for row in reader:
     #print(row)
-    users.append(row)
+    users.append(users)
 print(users)
